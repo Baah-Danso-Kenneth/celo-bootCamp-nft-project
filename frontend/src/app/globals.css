@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  overflow-x: hidden;
+}
+
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #333333;
+}
+
+
+.fade-bottom {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 10%,   
+    rgba(0, 0, 0, 0.3) 50%, 
+    rgba(0, 0, 0, 0) 90%   
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 10%,  
+    rgba(0, 0, 0, 0.3) 50%, 
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+
+
+
+.text-custom-gradient {
+  background: linear-gradient(to right, #FF7A18, #AF002D); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
