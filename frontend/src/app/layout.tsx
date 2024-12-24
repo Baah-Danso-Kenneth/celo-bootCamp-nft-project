@@ -1,5 +1,19 @@
 import "./globals.css";
 import { Metadata } from "next";
+import {Oswald, Playwrite_IT_Trad, Nunito_Sans} from "next/font/google"
+
+
+const play = Playwrite_IT_Trad({
+  variable: '--font-play',
+  weight: ['200','300'],
+});
+
+const nunito = Nunito_Sans({
+  variable: '--font-nunito',
+  weight: ['300', '600'],
+  subsets: ['latin'],
+});
+
 
 export const metadata: Metadata = {
   title: "STICKY NFT MARKET",
@@ -14,8 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body className={`${nunito.variable} ${play.variable} antialiased`}>
            {children}
       </body>
     </html>
