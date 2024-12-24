@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        pop: ['var(--font-pop)', ...fontFamily.sans],
-        nowy: ['var(--font-nowy)', ...fontFamily.sans],
+        play: ['var(--font-play)', ...fontFamily.sans],
+        nunito: ['var(--font-nunito)', ...fontFamily.sans],
       },
       rotate:{
         '15':'-10deg',
