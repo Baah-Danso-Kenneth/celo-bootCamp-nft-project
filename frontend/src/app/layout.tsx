@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Metadata } from "next";
-import {Oswald, Playwrite_IT_Trad, Nunito_Sans} from "next/font/google"
+import {Allura, Playwrite_IT_Trad, Nunito_Sans} from "next/font/google"
 
 
 const play = Playwrite_IT_Trad({
@@ -11,6 +11,12 @@ const play = Playwrite_IT_Trad({
 const nunito = Nunito_Sans({
   variable: '--font-nunito',
   weight: ['300', '600'],
+  subsets: ['latin'],
+});
+
+const allura= Allura({
+  variable: '--font-allura',
+  weight: ['400'],
   subsets: ['latin'],
 });
 
@@ -28,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${play.variable} antialiased`}>
+      <body className={`${nunito.variable} ${play.variable} ${allura.variable} antialiased`}>
            {children}
       </body>
     </html>

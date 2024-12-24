@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         play: ['var(--font-play)', ...fontFamily.sans],
         nunito: ['var(--font-nunito)', ...fontFamily.sans],
+        allura: ['var(--font-allura)', ...fontFamily.sans],
       },
       rotate:{
         '15':'-10deg',
