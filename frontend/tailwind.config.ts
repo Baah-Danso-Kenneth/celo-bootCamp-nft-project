@@ -21,16 +21,13 @@ const config: Config = {
         'custom-gradient': 'linear-gradient(to bottom, #B78BF2 0%, #A8FF8A 100%)',
       },
       colors: {
-        dark: '#000000',
-        light: '#F2F2F4',
-        primary: '#A8FF8A',
-        darkGray: '#222222',
-        darkGrayHue: '#333333',
-        gray: '#969696',
-        grayTint: '#EFEFEF',
-        mouve:'#B78BF2'
+        beige: '#BBAA89',
+        rose: '#FE191F',
+        tan: '#B29b7e',
+        light:'#e4e1dc'
       },
       animation: {
+        'spin-slow': 'spin 7s linear infinite',
         flash: 'flash 2.5s infinite',
       },
       keyframes: {
