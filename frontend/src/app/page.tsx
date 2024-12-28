@@ -16,10 +16,9 @@ function Home() {
       <Header/>
       <BannerPage/>
       <TableParts/>
-      <RotationText/>
-      <Faqs/>
       <AboutContent/>
       <BePartSection/>
+      <Faqs/>
       <Footer/>
     </div>
   )
