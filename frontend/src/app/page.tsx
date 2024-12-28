@@ -6,6 +6,8 @@ import RotationText from '@/components/ui/rotationText'
 import TableParts from '@/components/ui/tableParts'
 import React from 'react'
 import AboutContent from '../components/sections/landingPage/aboutContent';
+import BePartSection from '@/components/sections/landingPage/bePartSection'
+
 
 function Home() {
   return (
@@ -17,6 +19,7 @@ function Home() {
       <RotationText/>
       <Faqs/>
       <AboutContent/>
+      <BePartSection/>
       <Footer/>
     </div>
   )
