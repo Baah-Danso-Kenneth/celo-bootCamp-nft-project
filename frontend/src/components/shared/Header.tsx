@@ -5,7 +5,7 @@ function Header() {
     <div className='md:border-b h-auto '>
     <div className=' md:mx-10 md:flex flex-row justify-between items-center '>
         <div>
-          <h1 className='md:font-play italic text-[16px] font-bold uppercase'>sticky</h1>
+          <h1 className='md:font-play italic  text-[16px] font-bold uppercase'>sticky</h1>
         </div>
 
         <div className='md:flex items-center md:relative font-nunito text-[16px] uppercase'>
