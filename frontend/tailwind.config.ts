@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
@@ -10,8 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        pop: ['var(--font-pop)', ...fontFamily.sans],
-        nowy: ['var(--font-nowy)', ...fontFamily.sans],
+        play: ['var(--font-play)', ...fontFamily.sans],
+        nunito: ['var(--font-nunito)', ...fontFamily.sans],
+        allura: ['var(--font-allura)', ...fontFamily.sans],
       },
       rotate:{
         '15':'-10deg',
@@ -20,23 +22,26 @@ const config: Config = {
         'custom-gradient': 'linear-gradient(to bottom, #B78BF2 0%, #A8FF8A 100%)',
       },
       colors: {
-        dark: '#000000',
-        light: '#F2F2F4',
-        primary: '#A8FF8A',
-        darkGray: '#222222',
-        darkGrayHue: '#333333',
-        gray: '#969696',
-        grayTint: '#EFEFEF',
-        mouve:'#B78BF2'
+        beige: '#BBAA89',
+        rose: '#FE191F',
+        tan: '#B29b7e',
+        light:'#e4e1dc'
       },
       animation: {
+        'spin-slow': 'spin 7s linear infinite',
         flash: 'flash 2.5s infinite',
+        "loop-scroll": "loop-scroll 80s linear infinite"
       },
       keyframes: {
         flash: {
           '0%, 100%': { backgroundColor: '#333333' },
           '50%': { backgroundColor: '#B78BF2 ' },
         },
+        "loop-scroll":{
+          from: {transform: "translateX(0)"},
+          to: {transform: "translateX(-100%)"},
+        }
+      
       },
       
     },
