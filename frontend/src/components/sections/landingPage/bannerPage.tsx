@@ -1,4 +1,6 @@
+import CircleWithText from "@/components/shared/circle_rotate";
 import Image from "next/image";
+import age from '../../../../public/images/base2_nft.png'
 
 function BannerPage() {
   return (
@@ -24,7 +26,7 @@ function BannerPage() {
 
         <div className=" w-screen h-screen">
               <Image 
-               src="/images/base_nft.png" 
+               src="/images/base2_nft.png" 
                 alt="hulio" 
                 layout="fill" 
                  objectFit="cover" 
@@ -39,6 +41,11 @@ function BannerPage() {
         </div>
 
       </div>
+
+      <div className="absolute md:top-[70rem] md:left-10">
+        <CircleWithText text="sticky nft * sticky nft * sticky nft * sticky nft" image={age}/>
+      </div>
+
     </div>
   );
 }
