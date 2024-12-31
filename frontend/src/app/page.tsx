@@ -7,6 +7,9 @@ import TableParts from '@/components/ui/tableParts'
 import React from 'react'
 import AboutContent from '../components/sections/landingPage/aboutContent';
 import BePartSection from '@/components/sections/landingPage/bePartSection'
+import CircleWithText from '@/components/shared/circle_rotate'
+import ImageScroller from '@/components/shared/ImageScroller'
+import Collection from '@/components/shared/Collection'
 
 
 function Home() {
@@ -18,6 +21,7 @@ function Home() {
       <TableParts/>
       <AboutContent/>
       <BePartSection/>
+      <Collection/>
       <Faqs/>
       <Footer/>
     </div>
