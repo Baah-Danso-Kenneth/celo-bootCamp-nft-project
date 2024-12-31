@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
@@ -29,12 +30,18 @@ const config: Config = {
       animation: {
         'spin-slow': 'spin 7s linear infinite',
         flash: 'flash 2.5s infinite',
+        "loop-scroll": "loop-scroll 80s linear infinite"
       },
       keyframes: {
         flash: {
           '0%, 100%': { backgroundColor: '#333333' },
           '50%': { backgroundColor: '#B78BF2 ' },
         },
+        "loop-scroll":{
+          from: {transform: "translateX(0)"},
+          to: {transform: "translateX(-100%)"},
+        }
+      
       },
       
     },
