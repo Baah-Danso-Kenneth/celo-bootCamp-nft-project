@@ -1,38 +1,39 @@
+import Anyquestion from '@/components/ui/anyquestion'
 import Image from 'next/image'
 import React from 'react'
 
 function BePartSection() {
   return (
-    <div className='flex flex-row gap-10'>
-        
-        <div className=' text-[6rem] font-nunito  border border-black uppercase w-[30%]'>
-          <div className='p-5 border-b border-black'><h1>be part</h1></div>
-          <div className='flex flex-row font-alluram justify-between border-b border-black font-allura  '>
-              <div className='border-r border-black w-[50%]'><h1>of</h1></div>
-              <div className='mr-36'><h1>the</h1></div>
-          </div>
-          <div><h1>journey</h1></div>
+    <div className='grid grid-cols-2 text-[6rem]'>
+        <div className='w-full border-t h-[70%] uppercase  border-black'>
+            <div className='flex  font-nunito border-b border-black'>
+              <div className='ml-10 w-full text-center  border-r border-black'>
+                <h1>Be part</h1>
+              </div>
+            </div>
+
+            <div className='flex font-allura'>
+              <div className='w-[30%] ml-10 border-r border-black'><h1>of</h1></div>
+              <div className='ml-10 w-full border-r border-black'><h1>the</h1></div>
+            </div>
+            <div className='border-t border-b border-r text-center border-black'>journey</div>
         </div>
-
-        <div className='translate-x-[20rem]'>
-          <Image alt="" src="/images/space_nft.jpeg" width={600} height={800} className='object-contain '/>
-          <div className='border mt-2 h-auto flex '>
-              <div className=''>
-                <h1>Phase 1</h1>
-              </div>
-              <div className=''>
-                <p>Lorem, ipsum dolor.</p>
-              </div>
-
-              <div className='w-[30%]'>
-                  <p className=''>Lorr adipiis</p>
-              </div>
+      
+       <div className='relative translate-x-60'>
+          <div>
+            <Image src="/images/ftsss.jpeg" alt="img" width={300} height={10} className='object-contain w-[55%] h-[30%]'/>
           </div>
+     
 
-          <div className='border mt-2 h-auto'>
-            gee
-          </div>
-        </div>
+       <div className='absolute md:top-[-30] flex '>
+         <div className='md:translate-x-4'>
+         <Image src="/images/save-instagram.png" alt="img" width={50} height={50} />
+         </div>
+         <div className='md:translate-x-72'>
+         <Image src="/images/save-instagram.png" alt="img" width={50} height={50} />
+         </div>
+       </div>
+       </div>
 
       </div>
   )
