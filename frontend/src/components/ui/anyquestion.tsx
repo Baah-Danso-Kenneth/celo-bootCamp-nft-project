@@ -3,7 +3,7 @@ import React from 'react'
 function Anyquestion() {
   return (
    
-    <div className='h-24 text-2xl uppercase absolute top-0 right-0'>
+    <div className='h-24 text-2xl uppercase '>
     <div className='flex'>
       <div className='w-20 border-r border-l border-black border-t py-2 px-3 font-allura'><h1>any</h1></div>
       <div className='flex-grow border-r  w-52 border-black border-t font-nunito py-2 px-3 font-bold'><h1>questions?</h1></div>
