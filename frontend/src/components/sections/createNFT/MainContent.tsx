@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function MainContent() {
   return (
     <div className='font-nunito'>
@@ -25,7 +26,7 @@ function MainContent() {
         </div>
 
       <div>
-        
+
       </div>
 
       </div>
