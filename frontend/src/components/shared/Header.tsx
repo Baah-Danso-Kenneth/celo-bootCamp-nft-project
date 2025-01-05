@@ -1,24 +1,21 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Header() {
   return (
-    <div className='md:border-b h-auto '>
+    <div className='md:border-b h-auto border-black'>
     <div className=' md:mx-10 md:flex flex-row justify-between items-center '>
-        <div>
+        <Link href="/" className='cursor-pointer'>
           <h1 className='md:font-play italic  text-[16px] font-bold uppercase'>sticky</h1>
-        </div>
+        </Link>
 
-        <div className='md:flex items-center md:relative font-nunito text-[16px] uppercase'>
-        <div className='h-16 border-b border-r ' />
-           <div className='px-5'><h1>about</h1></div>  
-           <div className='h-16 border-b border-r' />
-           <div><h1 className='px-5'>[road map]</h1></div>
-           <div className='h-16 border-b border-r' />
-           <div><h1 className='px-5'>[collection]</h1></div>
-           <div className='h-16 border-b border-r' />
-           <div><h1 className='pl-3'>[connect wallet]</h1></div>
+          <div className='flex uppercase font-nunito'>
+            <Link href="/about" className='py-3 hover:bg-black px-3 border-black border-l border-r'>[market]</Link>
+            <div className='py-3 px-3  border-black border-r'>[collections]</div>
+            <div className='py-3  px-3 border-r border-black'>[about]</div>
+            <div className='py-3  px-3  border-black border-r'>[connect wallet]</div>
+          </div>
 
-        </div>
       </div>
       </div>
   )
