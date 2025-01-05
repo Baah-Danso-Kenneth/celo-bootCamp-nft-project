@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // backgroundImage: {
+      //   'pattern': "url('/patterns/argyle.png')", 
+      // },
       fontFamily: {
         play: ['var(--font-play)', ...fontFamily.sans],
         nunito: ['var(--font-nunito)', ...fontFamily.sans],
