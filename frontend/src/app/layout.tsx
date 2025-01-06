@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Metadata } from "next";
-import {Allura, Playwrite_IT_Trad, Nunito_Sans} from "next/font/google"
+import {Allura, Playwrite_IT_Trad, Nunito_Sans, Walter_Turncoat} from "next/font/google"
 
 
 const play = Playwrite_IT_Trad({
