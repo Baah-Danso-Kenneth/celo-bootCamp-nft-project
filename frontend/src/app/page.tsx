@@ -1,15 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Home from '@/components/pages/home'
 
-function Home() {
-  return (
-    <div>Home
-      <Link href="/">
-       <Image src="/images/sticky.png" alt="obri" width={100} height={200}/>
-      </Link>
-    </div>
-  )
+function page() {
+  return <Home/>
 }
 
-export default Home
+export default page
