@@ -1,13 +1,13 @@
 "use client"
 
-import { NftCarousel } from '../../../../types/types'
+import { NftCarouselProp } from '../../../../types/types'
 import Image from 'next/image'
 import useEmblaCarousel from "embla-carousel-react"
 import AutoPlay from "embla-carousel-autoplay"
 
 AutoPlay.globalOptions = { delay: 8000 };
 
-function CarouselContent({ carousel }: { carousel: NftCarousel[] }) {
+function CarouselContent({ carousel }: { carousel: NftCarouselProp[] }) {
   const [emblaRef] = useEmblaCarousel({ loop: true, duration: 100 }, [AutoPlay()]);
 
   return (
