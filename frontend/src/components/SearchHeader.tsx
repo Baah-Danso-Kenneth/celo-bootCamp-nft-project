@@ -19,7 +19,6 @@ function SearchHeader() {
         <div className='flex font-nunito uppercase'>
            <Category/>
             <SearchInput/>
-
             <div className='py-5 px-3'>
               <h1>Connect Wallet</h1>
             </div>

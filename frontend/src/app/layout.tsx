@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import { Metadata } from "next";
 import {Allura, Playwrite_IT_Trad, Nunito_Sans, Walter_Turncoat} from "next/font/google"
@@ -34,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${play.variable} ${allura.variable} antialiased`}>
+      <body className={`${nunito.variable} ${play.variable} ${allura.variable} antialiased bg-[#cec8bc]`}>
            {children}
       </body>
     </html>
