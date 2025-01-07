@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { Brush, BugPlay, Clock, Eye, Heart, Send, ShoppingCart } from 'lucide-react'
+import { Book, Brush, BugPlay, Clock, Eye, Heart, Menu, Send, ShoppingCart } from 'lucide-react'
 import { Love_Ya_Like_A_Sister } from 'next/font/google'
 import  Image  from 'next/image'
 import React from 'react'
@@ -99,7 +99,43 @@ function page() {
 
             </div>
 
-            <div className='w-full rounded-2xl h-[30vh] border mt-7 border-[#202020]'>
+            <div className='w-full rounded-2xl h-auto border mt-7 border-[#202020]'>
+
+             <div className='flex  space-x-3 border-b border-[#202020] py-2 font-nunito'>
+              <Menu className='ml-3'/>
+              <h1>Description</h1>
+             </div>
+
+             <div className='mt-2 font-nunito border-b border-[#202020] '>
+               <h1 className='ml-3 text-[20px]'>By <span className='font-bold'>lilyillo</span></h1>
+               <p className='mx-3 mb-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, tempora? Animi aspernatur excepturi modi in vitae quos? Ut recusandae debitis blanditiis natus vitae aperiam tenetur accusamus sapiente! Consequatur, quas eos?</p>
+             </div>
+
+             <div className='flex  space-x-3 border-b border-[#202020] py-2 font-nunito'>
+              <Book className='ml-3'/>
+              <h1>Details</h1>
+             </div>
+
+             <div className='flex justify-between mx-3 font-nunito text-[18px] mt-3  mb-3'>
+              <div className='space-y-3'>
+                <h1>Contract Address</h1>
+                <h1>Token ID</h1>
+                <h1>Token Standard</h1>
+                <h1>Metadata</h1>
+                <h1>Creator Earnings</h1>
+              </div>
+
+              <div className='space-y-3  flex flex-col justify-end'>
+              <h1>0x498a........</h1>
+              <h1>277784888823333333</h1>
+              <h1>ERC-7200</h1>
+              <h1>Frozen</h1>
+              <h1>10%</h1>
+              </div>
+
+             </div>
+
+
             </div>
 
           </div>
