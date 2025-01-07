@@ -1,5 +1,7 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Brush, Eye, Heart } from 'lucide-react'
+import { Love_Ya_Like_A_Sister } from 'next/font/google'
 import  Image  from 'next/image'
 import React from 'react'
 
@@ -32,8 +34,19 @@ function page() {
               <p className='text-[1.8rem]'>Owned by <span className='text-[16px] '>sticky.eth</span></p>
             </div>
 
-            <div>
-              
+            <div className="flex space-x-5 items-center" >
+              <div className='flex space-x-3'>
+                <Eye/>
+                <h1>1.2k view</h1>
+              </div>
+              <div className='flex space-x-3'>
+                <Heart/>
+                <h1>Likes</h1>
+              </div>
+              <div className='flex space-x-3'>
+                <Brush/>
+                <h1>view</h1>
+              </div>
             </div>
 
           </div>
